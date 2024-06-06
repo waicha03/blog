@@ -27,7 +27,7 @@
             {{ $posts->links() }}
         </div>
         <a href='/posts/create'>create</a>
-        `form_${id}`
+        
         <script>
             function deletePost(id) {
                 'use strict'

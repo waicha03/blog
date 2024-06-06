@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
-{   protected $fillable = [
+{   use SoftDeletes;
+    
+    protected $fillable = [
     'title',
     'body',
     ];
@@ -25,5 +27,5 @@ class Post extends Model
     }
     
 }
-use SoftDeletes;
+
 
